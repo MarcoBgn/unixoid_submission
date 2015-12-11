@@ -1,0 +1,3 @@
+Apple_PubSub_Socket_Render=/tmp/launch-zOKvXu/Render
+GEM_HOME=/Users/Me/.rvm/gems/ruby-2.2.1
+GEM_PATH=/Users/Me/.rvm/gems/ruby-2.2.1:/Users/Me/.rvm/gems/ruby-2.2.1@global

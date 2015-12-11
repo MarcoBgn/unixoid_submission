@@ -1,0 +1,500 @@
+   57  ls
+   58  ls | grep *.txt
+   59  ls | grep *.txt | wc -l
+   60  grep *.txt
+   61  ls
+   62  man grep
+   63  find ~ * | grep *.*
+   64  ls
+   65  find *
+   66  touch a_file
+   67  ls
+   68  find *
+   69  find * | grep *.txt
+   70  find * | grep "*.txt"
+   71  find * | grep "*.txt" | wc -l
+   72  find *
+   73  find * | grep
+   74  find * | grep ".txt"
+   75  find * | grep ".txt" | wc -l
+   76  find . *
+   77  find . * | grep ".txt" | wc -l
+   78  find *
+   79  touch another.txt
+   80  find * | grep ".txt" | wc -l
+   81  find ~ * | grep ".txt" | wc -l
+   82  cd ~
+   83  ls
+   84  find ~ 
+   85  man wc
+   86  ls
+   87  cd desktop
+   88  ls
+   89  cd Makers\ Academy/
+   90  ls
+   91  cd Pre-Course/
+   92  ls
+   93  cd Week
+   94  cd Week1/
+   95  ls
+   96  cd Chall
+   97  cd Challenge_1
+   98  ls
+   99  cd Text_Files/
+  100  ls
+  101  tail -10 less
+  102  tail -10 Less_Text.txt 
+  103  less -5 More_Text.txt 
+  104  head -5 More_Text.txt 
+  105  cd..
+  106  cd ..
+  107  ls
+  108  cd Text_Files/
+  109  ls
+  110  ls
+  111  mv More_Text.txt learn_to_code
+  112  ls
+  113  cp learn_to_code 
+  114  cp learn_to_code More_Text.txt
+  115  ls
+  116  head -5 learn_to_code 
+  117  tail -5 More_Text.txt 
+  118  wc -l learn_to_code 
+  119  wc -lw learn_to_code 
+  120  wc -w Less_Text.txt 
+  121  cd ~
+  122  find -name b*.*
+  123  find -name "b*.*"
+  124  find "b*.*"
+  125  find b*.*
+  126  find b*.* -print
+  127  find ~ -name b*.* -print
+  128  find ~ -name "b*.*" -print
+  129  ls n*.*
+  130  list ~ -name b*.* -print
+  131  find ~ -name b*.* -print
+  132  cd desktop
+  133  find -mmin 1
+  134  find -mmin 1
+  135  man fins
+  136  man find
+  137  ls
+  138  cd/
+  139  dir
+  140  ls
+  141  cd ..
+  142  ls
+  143  find -mmin 2
+  144  find *.* -mmin 2
+  145  find ~ *.* -mmin 2
+  146  ls
+  147  cd pictures
+  148  ls
+  149  mkdir screenS
+  150  defaults write com.apple.screencapture location ~/Pictures/ScreenS
+  151  ls
+  152  cd screenS
+  153  ls
+  154  cd ..
+  155  cd ..
+  156  cd ..
+  157  killall finder
+  158  ls
+  159  cd desktop
+  160  ls
+  161  ls -la
+  162  cd pictures
+  163  ls
+  164  cd ..
+  165  cd pictures
+  166  ls
+  167  cd screenS
+  168  ls
+  169  ls
+  170  ls -la
+  171  cd ..
+  172  cd ..
+  173  ls
+  174  cd library
+  175  ls
+  176  cd Preferences
+  177  ls
+  178  defaults write com.apple.screencapture location ~/Desktop/
+  179  ls
+  180  man wc
+  181  whoami
+  182  ls -l
+  183  ls
+  184  cd someDir
+  185  ls
+  186  ls -l someText
+  187  chmod go+w someText
+  188  ls
+  189  ls -l
+  190  chmod u+w someText
+  191  ls
+  192  ls -l
+  193  chmod u+x someText
+  194  ls
+  195  ls -l
+  196  cat > hello.rb
+  197  ls
+  198  ruby hello.rb
+  199  ./hello.rb
+  200  ls
+  201  chmod u+w hello.rb
+  202  ls -l
+  203  chmod u+x hello.rb
+  204  ls -l
+  205  ./hello.rb
+  206  which ruby
+  207  nano hello.rb
+  208  ls
+  209  cd ~
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd me
+  214  ls -la
+  215  cd .rbenv
+  216  ls
+  217  cd versions
+  218  ls
+  219  cd 2.2.3
+  220  ls
+  221  cd bin
+  222  ls
+  223  irb
+  224  ls
+  225  cd irb
+  226  ls -la
+  227  cd ..
+  228  ls
+  229  cd ..
+  230  ls
+  231  cd ..
+  232  ls
+  233  cd shims
+  234  ls
+  235  cd gem
+  236  ls
+  237  ls -la
+  238  irb
+  239  cd .
+  240  cd ..
+  241  cd ..
+  242  ls
+  243  cd someDir
+  244  which ruby
+  245  nano hello.rb
+  246  ./hello.rb
+  247  nano hello.rb
+  248  ./hello.rb
+  249  which ruby
+  250  ls
+  251  cd ..
+  252  ls
+  253  cd .rbenv
+  254  ls
+  255  cd shims
+  256  ls
+  257  ruby
+  258  cd ..
+  259  cd ..
+  260  cd ~
+  261  ls
+  262  cd someDir
+  263  nano hello.rb
+  264  ./hello.rb
+  265  which ruby
+  266  nano hello.rb
+  267  ./hello.rb
+  268  ./hello.rb
+  269  ls
+  270  nano hello.rb
+  271  ls
+  272  hello
+  273  ./hello.rb
+  274  which irb
+  275  nano hello.rb
+  276  nano hello.rb
+  277  ./hello.rb
+  278  ruby hello.rb
+  279  ls
+  280  cd ..
+  281  ls
+  282  ls -la
+  283  mv .rbenv rbenv
+  284  ls
+  285  nano hello.rb
+  286  cd someDir
+  287  ls
+  288  nano hello.rb
+  289  ./hello.rb
+  290  which ruby
+  291  cd ..
+  292  cd .rvm
+  293  ls
+  294  cd rubies
+  295  ls
+  296  cd ruby-2.2.3
+  297  ls
+  298  ls -la
+  299  cd bin
+  300  ls
+  301  ruby 
+  302  ruby
+  303  cd ..
+  304  cd ~
+  305  ls
+  306  cd someDir
+  307  ls
+  308  ./hello.rb
+  309  ls
+  310  cd someDir
+  311  ls
+  312  ./hello.rb
+  313  nano hello.rb
+  314  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  315  ruby hello.rb
+  316  which ruby
+  317  nano hello.rb
+  318  ./hello.rb
+  319  which ruby
+  320  nano hello.rb
+  321  ./hello.rb
+  322  nano hello.rb
+  323  ./hello.rb
+  324  which ruby
+  325  which irb
+  326  `which irb`
+  327  head `which irb`
+  328  ls -l /etc/
+  329  env
+  330  echo $home
+  331  echo $HOME
+  332  echo $PATH
+  333  env
+  334  echo $TMPDIR
+  335  echo "Hello, World" | grep "l" | wc -c
+  336  echo "Hello, World" | grep "H" | wc -c
+  337  echo "Hello, World" | grep "H" | wc 
+  338  echo "Hello, World" | grep "H" | wc -l
+  339  echo "Hello, World" | grep "l" | wc -l
+  340  echo "Hello, World" | grep "l" | wc 
+  341  rvm use 2.2.3
+  342  irb
+  343  rvm get stable --auto-dotfiles
+  344  irb
+  345  ./hello.rb
+  346  echo $PATH
+  347  export SECRET_KEY = 12345asdef
+  348  export SECRET_KEY=12345asdef
+  349  echo $PATH
+  350  echo $SECRET_KEY
+  351  irb
+  352  cd ~
+  353  ls -la
+  354  cat .bash_profile
+  355  echo &SECRET_KEY
+  356  echo $SECRET_KEY
+  357  ps
+  358  ps x
+  359  ps x | grep "^apple"
+  360  ps x | grep "[^apple]"
+  361  ps x | grep "^*apple*.*"
+  362  ps x | grep "*apple*.*"
+  363  ps x | grep *apple*.*
+  364  ps x | grep bash | wc -l
+  365  ps x | grep bash 
+  366  ls
+  367  cd someDir
+  368  vi myFile
+  369  ls
+  370  vi myFile
+  371  exit
+  372  cd ~
+  373  home
+  374  cd ~
+  375  ls
+  376  cd ..
+  377  ls
+  378  cd Me
+  379  ls
+  380  cd ~
+  381  ls
+  382  cd ..
+  383  ls
+  384  cd Me
+  385  cd desktop
+  386  ls
+  387  cd Makers\ Academy/
+  388  ls
+  389  cd Pre
+  390  cd Pre-Course/
+  391  ls
+  392  cd Week1/
+  393  ls
+  394  cd Challenge_1
+  395  ls
+  396  mkdir New
+  397  touch newFile
+  398  mv newFile New/
+  399  ls
+  400  ls /New
+  401  ls New/
+  402  pwd
+  403  cd ..
+  404  ls
+  405  cd Challenge_1
+  406  ls
+  407  cd Text_Files/
+  408  ls
+  409  cd .
+  410  ls
+  411  cd ..
+  412  mkdir -p Foo/Bar/folders
+  413  ls
+  414  ls /Foo
+  415  ls Foo/
+  416  ls Foo/Bar
+  417  ls 
+  418  ls -l
+  419  ls
+  420  rm Empty_Folder/
+  421  rmdir Empty_Folder/
+  422  ls
+  423  ls New/
+  424  rm -R New
+  425  ls
+  426  cd Text_Files/
+  427  ls
+  428  cp More_Text.txt Learn_to_code
+  429  ls
+  430  wc -w Less_Text.txt 
+  431  wc Less_Text.txt 
+  432  cat Less_Text.txt 
+  433  wc -w Less_Text.txt 
+  434  ls | grep ".txt" | wc -l
+  435  ls
+  436  cd ~
+  437  find -name "b*.*"
+  438  find -name "b*.*" -print
+  439  find -name b*.* -print
+  440  find ~ -name b*.* -print
+  441  find . -name b*.* -print | wc -l
+  442  man wc
+  443  iswhitespace
+  444  iswspace
+  445  man wc
+  446  man iswspace
+  447  iswspace( ) end
+  448  iswspace(x)
+  449  iswspace(" ")
+  450  iswspace
+  451  iswspace(word)
+  452  man iswspace
+  453  iswspace(" " wc)
+  454  iswspace( wc)
+  455  iswspace(v wc)
+  456  echo $LANG
+  457  echo $LC_CTYPE
+  458  echo $LC_CTYPE
+  459  env
+  460  export DAY=Wednesday
+  461  echo $DAY
+  462  echo $DAY
+  463  export DAY=Wednesday >> ~/.bash_profile
+  464  echo $DAY
+  465  echo $DAY
+  466  echo $DAY
+  467  cat ~/.bash_profile
+  468  export DAY=Wednesay >> ~/.bash_profile
+  469  cat ~/.bash_profile
+  470  echo $DAY
+  471  echo $HOME
+  472  echo "export DAY=Wednesday" ~/.bash_profile
+  473  echo $DAY
+  474  env
+  475  cat ~/.bash_profile
+  476  echo "export DAY=Wednesday" >> ~/.bash_profile
+  477  ls
+  478  echo $DAY
+  479  cat ~/.bash_profile
+  480  cd ~
+  481  ls
+  482  cd desktop
+  483  ls
+  484  cd temp
+  485  mkdir -p my/private/files
+  486  ls
+  487  mkdir -p my/public/files
+  488  touch my/private/files/t-vars.env
+  489  ls my/private/files
+  490  echo "List of env vars that begin with T"$'\n' >> my/private/files/t-vars.env
+  491  cat /my/private/files/t-vars.env
+  492  cat my/private/files/t-vars.env
+  493  env | egrep '^[T]\w*.*$' 
+  494  env | egrep '^[T]\w*.*$' >> my/private/files/t-vars.env
+  495  cat my/private/files/t-vars.env
+  496  echo "export TESTING_MAKERS=working" >> ~/.bash_profile
+  497  cd desktop
+  498  cd temp
+  499  ls
+  500  TESTING_MAKERS
+  501  cd desktop/temp
+  502  echo $TESTING_MAKERS
+  503  echo Overall count: $(env | egrep '^[T]\w*.*$' | wc -l) > my/public/files/t-vars.count 
+  504  cat my/public/files/t-vars.count
+  505  cd my/private/files
+  506  ls
+  507  ls -l
+  508  chmod g-r u-r t-vars.env 
+  509  chmod g-r t-vars.env 
+  510  chmod go-r t-vars.env 
+  511  ls
+  512  ls -l
+  513  cd ..
+  514  cd ..
+  515  ls
+  516  ls -l
+  517  chmod go-r-x private
+  518  ls -l
+  519  cd public
+  520  ls
+  521  cd files
+  522  ls
+  523  ls -l
+  524  chmod go+w t-vars.count 
+  525  ls -l
+  526  find ~ -name "*.txt" -print | wc -l > my/public/files/text-files-count.txt
+  527  ls
+  528  cd ..
+  529  ls
+  530  cd ..
+  531  ls
+  532  cat public/files/text-files-count.txt
+  533  ls
+  534  cd public
+  535  ls
+  536  cd files
+  537  ls
+  538  touch text-files-count.txt
+  539  ls
+  540  find ~ -name "*.txt" | wc -l >> text-files-count.txt
+  541  ls
+  542  cat text-files-count.txt
+  543  cd ..
+  544  cd ..
+  545  ls
+  546  cd ..
+  547  ls
+  548  env | sort | head -3 > my/private/files/first-three-env.txt
+  549  cat my/private/files/first-three-env.txt
+  550  history > my/private/files/commands.txt
+  551  cat my/private/files/command.txt
+  552  history
+  553  touch my/private/files/command.txt
+  554  mv my/private/files/command.txt my/private/files/commands.txt
+  555  cat my/private/files/commands.txt
+  556  history >> my/private/files/commands.txt

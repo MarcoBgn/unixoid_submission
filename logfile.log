@@ -1,0 +1,224 @@
+# Logfile created on 2015-12-09 20:20:17 +0000 by logger.rb/47272
+I, [2015-12-09T20:20:18.393740 #1444]  INFO -- : FFFFFFFFFFFFFF
+
+Failures:
+
+  1) Unixoid test 1. should have a my/private/files directory
+     Failure/Error: expect(File.exist?('my/private/files')).to be true
+
+       expected true
+            got false
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  2) Unixoid test 2. should have a my/public/files directory
+     Failure/Error: expect(File.exist?('my/public/files')).to be true
+
+       expected true
+            got false
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:10:in `block (2 levels) in <top (required)>'
+
+  3) Unixoid test 3. should have a my/private/files/t-vars.env file
+     Failure/Error: expect(File.exist?('my/private/files/t-vars.env')).to be true
+
+       expected true
+            got false
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:14:in `block (2 levels) in <top (required)>'
+
+  4) Unixoid test 4. should have 'List of env vars that begin with T' on first line of t-vars.env
+     Failure/Error: lines = File.readlines('my/private/files/t-vars.env')
+
+     Errno::ENOENT:
+       No such file or directory @ rb_sysopen - my/private/files/t-vars.env
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:18:in `readlines'
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:18:in `block (2 levels) in <top (required)>'
+
+  5) Unixoid test 5. should have the list of env vars that begin with T in t-vars.env
+     Failure/Error: lines = File.readlines('my/private/files/t-vars.env')
+
+     Errno::ENOENT:
+       No such file or directory @ rb_sysopen - my/private/files/t-vars.env
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:23:in `readlines'
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:23:in `block (2 levels) in <top (required)>'
+
+  6) Unixoid test 6. should have the TESTING_MAKERS env variable set up
+     Failure/Error: expect(ENV["TESTING_MAKERS"]).to eq('working')
+
+       expected: "working"
+            got: nil
+
+       (compared using ==)
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:30:in `block (2 levels) in <top (required)>'
+
+  7) Unixoid test 7. should have the TESTING_MAKERS env set to be created for new terminal windows
+     Failure/Error: expect(File.read("#{Dir.home}/.bash_profile")).to match(/export\s+TESTING_MAKERS=working/)
+
+       expected "\n[[ -s \"$HOME/.profile\" ]] && source \"$HOME/.profile\" # Load the default .profile\n\neval \"$(rbenv init -)\"\nexport PATH=\"$HOME/.rbenv/shims:$PATH\"\n\n[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\" # Load RVM into a shell session *as a function*\n\n" to match /export\s+TESTING_MAKERS=working/
+       Diff:
+       @@ -1,2 +1,8 @@
+       -/export\s+TESTING_MAKERS=working/
+       +
+       +[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+       +
+       +eval "$(rbenv init -)"
+       +export PATH="$HOME/.rbenv/shims:$PATH"
+       +
+       +[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:34:in `block (2 levels) in <top (required)>'
+
+  8) Unixoid test 8. should have t-vars.count in my/public/files with an overall count
+     Failure/Error: expect(File.exist?('my/public/files/t-vars.count')).to be true
+
+       expected true
+            got false
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:38:in `block (2 levels) in <top (required)>'
+
+  9) Unixoid test 9. should have rw access for the owner only on my/private/files/t-vars.env
+     Failure/Error: permissions = File.stat(file).mode
+
+     Errno::ENOENT:
+       No such file or directory @ rb_file_s_stat - my/private/files/t-vars.env
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:44:in `stat'
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:44:in `block (2 levels) in <top (required)>'
+
+  10) Unixoid test 10. should only allow the owner to change into my/private/files
+      Failure/Error: permissions = File.stat(folder).mode
+
+      Errno::ENOENT:
+        No such file or directory @ rb_file_s_stat - my/private/files
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:50:in `stat'
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:50:in `block (2 levels) in <top (required)>'
+
+  11) Unixoid test 11. should have rw permissions for all users on my/public/files/t-vars.count
+      Failure/Error: t_vars_permissions = File.stat('my/public/files/t-vars.count').mode
+
+      Errno::ENOENT:
+        No such file or directory @ rb_file_s_stat - my/public/files/t-vars.count
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:57:in `stat'
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:57:in `block (2 levels) in <top (required)>'
+
+  12) Unixoid test 12. should have the count of text files in my/public/files/text-files-count.txt
+      Failure/Error: expect(File.read('my/public/files/text-files-count.txt')).to match(/^\s*\d{2,6}\s*$/)
+
+      Errno::ENOENT:
+        No such file or directory @ rb_sysopen - my/public/files/text-files-count.txt
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:62:in `read'
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:62:in `block (2 levels) in <top (required)>'
+
+  13) Unixoid test 13. should have the the first three env vars in my/private/files/first-three-env.txt
+      Failure/Error: lines = File.readlines('my/private/files/first-three-env.txt').map(&:chomp)
+
+      Errno::ENOENT:
+        No such file or directory @ rb_sysopen - my/private/files/first-three-env.txt
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:66:in `readlines'
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:66:in `block (2 levels) in <top (required)>'
+
+  14) Unixoid test 14. should have commands.txt in my/private/files
+      Failure/Error: expect(File.exist?('my/private/files/commands.txt')).to be true
+
+        expected true
+             got false
+      # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:73:in `block (2 levels) in <top (required)>'
+
+Finished in 0.06137 seconds (files took 0.30094 seconds to load)
+14 examples, 14 failures
+
+Failed examples:
+
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:5 # Unixoid test 1. should have a my/private/files directory
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:9 # Unixoid test 2. should have a my/public/files directory
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:13 # Unixoid test 3. should have a my/private/files/t-vars.env file
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:17 # Unixoid test 4. should have 'List of env vars that begin with T' on first line of t-vars.env
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:22 # Unixoid test 5. should have the list of env vars that begin with T in t-vars.env
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:29 # Unixoid test 6. should have the TESTING_MAKERS env variable set up
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:33 # Unixoid test 7. should have the TESTING_MAKERS env set to be created for new terminal windows
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:37 # Unixoid test 8. should have t-vars.count in my/public/files with an overall count
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:42 # Unixoid test 9. should have rw access for the owner only on my/private/files/t-vars.env
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:48 # Unixoid test 10. should only allow the owner to change into my/private/files
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:56 # Unixoid test 11. should have rw permissions for all users on my/public/files/t-vars.count
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:61 # Unixoid test 12. should have the count of text files in my/public/files/text-files-count.txt
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:65 # Unixoid test 13. should have the the first three env vars in my/private/files/first-three-env.txt
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:72 # Unixoid test 14. should have commands.txt in my/private/files
+
+
+I, [2015-12-09T21:47:51.918339 #2323]  INFO -- : .........F....
+
+Failures:
+
+  1) Unixoid test 10. should only allow the owner to change into my/private/files
+     Failure/Error: expect(permissions & 0000010).to eq(0)
+
+       expected: 0
+            got: 8
+
+       (compared using ==)
+     # /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:52:in `block (2 levels) in <top (required)>'
+
+Finished in 0.30443 seconds (files took 0.23984 seconds to load)
+14 examples, 1 failure
+
+Failed examples:
+
+rspec /Users/Me/.rvm/gems/ruby-2.2.1/gems/unixoid-challenge-0.1.4/challenge_spec.rb:48 # Unixoid test 10. should only allow the owner to change into my/private/files
+
+
+I, [2015-12-09T21:48:08.769967 #2323]  INFO -- : {
+  "message": "Must specify two-factor authentication OTP code.",
+  "documentation_url": "https://developer.github.com/v3/auth#working-with-two-factor-authentication"
+}
+
+I, [2015-12-09T21:48:08.807805 #2323]  INFO -- : /usr/bin/git
+
+I, [2015-12-09T21:48:09.337735 #2323]  INFO -- : marcobagnasco@ymail.com
+
+I, [2015-12-09T21:48:09.344725 #2323]  INFO -- : MarcoMkrs
+
+I, [2015-12-09T21:48:09.412437 #2323]  INFO -- : Initialized empty Git repository in /Users/Me/Desktop/temp/.git/
+
+I, [2015-12-09T21:48:09.436158 #2323]  INFO -- : 
+I, [2015-12-09T21:48:09.454540 #2323]  INFO -- : [master (root-commit) d2df2c1] Unixoid submission
+ 1 file changed, 1 insertion(+)
+ create mode 100644 unixoid_results.txt
+
+I, [2015-12-09T21:48:09.462155 #2323]  INFO -- : 
+E, [2015-12-09T21:48:10.459858 #2323] ERROR -- : Command 'git push --force -u origin master 2>/dev/null' returned 128. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+
+I, [2015-12-09T21:48:10.474404 #2323]  INFO -- : 
+I, [2015-12-09T21:49:36.689023 #2367]  INFO -- : ..............
+
+Finished in 0.01713 seconds (files took 0.09796 seconds to load)
+14 examples, 0 failures
+
+
+I, [2015-12-09T21:49:50.239649 #2367]  INFO -- : {
+  "message": "Must specify two-factor authentication OTP code.",
+  "documentation_url": "https://developer.github.com/v3/auth#working-with-two-factor-authentication"
+}
+
+I, [2015-12-09T21:49:50.244087 #2367]  INFO -- : /usr/bin/git
+
+I, [2015-12-09T21:49:50.250642 #2367]  INFO -- : marcobagnasco@ymail.com
+
+I, [2015-12-09T21:49:50.257140 #2367]  INFO -- : MarcoMkrs
+
+I, [2015-12-09T21:49:50.289863 #2367]  INFO -- : Reinitialized existing Git repository in /Users/Me/Desktop/temp/.git/
+
+I, [2015-12-09T21:49:50.297791 #2367]  INFO -- : 
+I, [2015-12-09T21:49:50.307310 #2367]  INFO -- : [master 9b62cd4] Unixoid submission
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+I, [2015-12-09T21:49:50.315143 #2367]  INFO -- : 
+E, [2015-12-09T21:49:51.322475 #2367] ERROR -- : Command 'git push --force -u origin master 2>/dev/null' returned 128. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+
+I, [2015-12-09T21:49:51.344532 #2367]  INFO -- : 
